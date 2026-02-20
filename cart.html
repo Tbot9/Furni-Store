@@ -11,13 +11,22 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<!-- 
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f3f3f3;
+        margin: 0;
+        padding: 0;
+    } -->
+
 
 <body>
     <!-- navbar -->
     <header>
         <nav>
             <div>
-                <a class="lll" href="">
+                <a class="lll" href="index.html">
                     <p class="logo">Furni<Span>.</Span></p>
                 </a>
             </div>
@@ -41,19 +50,19 @@
         <div class="hero-content">
             <div class="hero-left">
                 <h1>Shop</h1>
-        </div>
+            </div>
 
     </section>
 
 
 
 
-    <!-- cart section -->
 
+    <section id="cart-section">
 
-    <section>
-        <div>
-            <table>
+        <div class="container">
+
+            <table class="cart-table">
                 <thead>
                     <tr>
                         <th>Image</th>
@@ -64,35 +73,89 @@
                         <th>Remove</th>
                     </tr>
                 </thead>
+
                 <tbody>
+
                     <tr>
-                        <td>
-                            <img src="images/product-1.png" alt="">
-                        </td>
-                        <td><h2>Product 1</h2></td>
+                        <td><img class="product-img" src="images/product-1.png"></td>
+                        <td>Product 1</td>
                         <td>$49.00</td>
                         <td>
-                            <div>
-                                <button class="quantity-btn">-</button>
-                                <input type="text" value="1" class="quantity-input">
-                                <button class="quantity-btn">+</button>
+                            <div class="quantity-box">
+                                <button>−</button>
+                                <input type="number" value="1">
+                                <button>+</button>
                             </div>
                         </td>
                         <td>$49.00</td>
-                        <td><a href=""><i class="fa-solid fa-trash-can" style="color: rgba(255, 0, 0, 1.00);"></i></a></td>
-                        
+                        <td><button class="remove-btn">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="product-img" src="images/product-2.png">
+                        </td>
+                        <td>Product 2</td>
+                        <td>$49.00</td>
+                        <td>
+                            <div class="quantity-box">
+                                <button>−</button>
+                                <input type="number" value="1">
+                                <button>+</button>
+                            </div>
+                        </td>
+                        <td>$49.00</td>
+                        <td><button class="remove-btn">X</button></td>
                     </tr>
 
                 </tbody>
             </table>
+
+
+            <div class="bottom-section">
+
+                <div class="left-box">
+
+                    <a class="btn-black">Update Cart</a>
+                    <a class="btn-black ">Continue Shopping</a>
+
+                    <div class="coupon">
+                        <h2>Coupon</h2>
+                        <p class="p">Enter your coupon code if you have one.</p>
+                        <input type="text" placeholder="Coupon Code">
+                        <a class="btn-black">Apply Coupon</a>
+                    </div>
+
+                </div>
+
+                <div class="right-box">
+
+                    <h2>CART TOTALS</h2>
+
+                    <div class="totals">
+                        <div class="totals-row">
+                            <span>Subtotal</span>
+                            <span>$230.00</span>
+                        </div>
+
+                        <div class="totals-row">
+                            <span>Total</span>
+                            <span>$230.00</span>
+                        </div>
+                    </div>
+
+                    <a class="btn-black">
+                        Proceed To Checkout
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-   
 
 
-
-    <!-- subscribe newsetteler  sesction -->
 
 
     <section id="subscribe">
