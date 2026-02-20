@@ -509,10 +509,9 @@ nav .nav-a {
 .recent-row {
     display: flex;
     gap: 1.5rem;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 
 }
-
 .recent-row div {
     width: 31.9%;
 }
